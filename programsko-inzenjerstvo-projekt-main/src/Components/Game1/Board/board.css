@@ -1,0 +1,32 @@
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    margin: auto
+}
+
+.board{
+    border: 5px  solid rgb(187, 162, 36);
+    padding: 3px;
+    box-sizing: border-box;
+    border-style: inset;
+    box-shadow: 8px 5px 5px rgb(33, 113, 157);
+    margin: auto;
+}
+
+.back{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: cursive;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
