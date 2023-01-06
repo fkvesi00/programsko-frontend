@@ -36,6 +36,8 @@ function CommentForm({addComment}) {
                 text
             }
             addComment(newComment)
+            setText('')
+            setRating(0)
         }
     }
 
