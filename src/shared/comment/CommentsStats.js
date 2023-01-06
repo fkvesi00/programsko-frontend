@@ -10,7 +10,7 @@ function CommentsStats({comments}) {
   return (
     <div className='feedback-stats'>
       <div>Number of comments: {comments.length}</div>
-      <div>Game rating:{avg}</div>
+      <div>Game rating:{avg ? avg : 0}</div>
     </div>
   )
 }
