@@ -7,7 +7,7 @@ function CommentItem({comment}) {
     {marginRight:'0px',
     display:'flex',
     justifyContent:'start',
-    padding:'10px',marginLeft:'5px',
+    padding:'10px',
     width:'100%',
     alignItems:'center',
     border:'1px solid black'

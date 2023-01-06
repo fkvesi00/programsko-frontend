@@ -38,15 +38,15 @@ function CommentForm({addComment}) {
             }
             setText('')
             addComment(newComment)
-            
+            setRating(0)
         }
     }
 
   return (
-      <form onSubmit={onSubmitChange}>
+      <form>
         <CommentRating onRatingChange={onRatingChange}/>
           <div className='input-group'>
-            <textarea placeholder='napisite komentar...' onChange={onTextChange} type='text' value={text}></textarea>
+            <textarea placeholder='Write comment here...' onChange={onTextChange} type='text' value={text}></textarea>
             <button type='button' disabled={isDisabled} className='btn' onClick={() => onSubmitChange()}>Submit</button>
         </div>
         <p>{message}</p>

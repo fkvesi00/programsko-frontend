@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.container {
+  max-width: 768px;
+  margin: auto;
+  padding: 0 20px;
+}
+
 .card{
     background:#FFF;
     color: #333;
@@ -55,7 +61,17 @@ textarea:focus {
     justify-content: space-between;
   }
 
-
+  .feedback-stats {
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #202142;
+    padding: 10px;
+    border-radius: 2%;
+    box-shadow: 10px 5px 5px #3c3e72;
+  }
+  
   @media (max-width: 600px) {
     .rating li {
       margin: 10px 3px;
