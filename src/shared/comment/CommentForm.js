@@ -30,22 +30,23 @@ function CommentForm({addComment}) {
     }
 
     const onSubmitChange = () => {
+       
         if(text.trim().length>10 && rating>0){
             const newComment = {
                 rating,
                 text
             }
-            addComment(newComment)
             setText('')
-            setRating(0)
+            addComment(newComment)
+            
         }
     }
 
   return (
-      <form >
+      <form onSubmit={onSubmitChange}>
         <CommentRating onRatingChange={onRatingChange}/>
           <div className='input-group'>
-            <textarea placeholder='napisite komentar...' onChange={onTextChange}></textarea>
+            <textarea placeholder='napisite komentar...' onChange={onTextChange} type='text' value={text}></textarea>
             <button type='button' disabled={isDisabled} className='btn' onClick={() => onSubmitChange()}>Submit</button>
         </div>
         <p>{message}</p>

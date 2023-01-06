@@ -60,7 +60,11 @@ textarea:focus {
     .rating li {
       margin: 10px 3px;
     }
-  
+
+    .card{
+      width: 80%;
+    }
+
     .rating {
       display: flex;
       align-items: center;
