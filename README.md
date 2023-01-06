@@ -1,1 +1,1 @@
-https://mini-games-fesb.herokuapp.com/
+https://lighthearted-frangipane-ba817a.netlify.app
